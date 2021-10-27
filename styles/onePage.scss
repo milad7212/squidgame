@@ -1,0 +1,81 @@
+
+.containerone, .squid {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.person {
+    position: absolute;
+    width: 150vmin;
+    height: 150vmin;
+}
+
+.btn {
+    position: absolute;
+    width: 15vmin;
+    height: 15vmin;
+    background: transparent;
+    color: #fff;
+    font-size: 5vmin;
+    font-family: 'Space Grotesk', sans-serif;
+    border-radius: 50%;
+    border: transparent;
+    z-index: 1;
+    transform: translate(-2vmin, -4.5vmin);
+    cursor: pointer;
+    transition: background 1s ease;
+}
+
+.btn:hover {
+    background: #ff0000;
+}
+
+.disable {
+    visibility: hidden;
+}
+
+.ink {
+    display: absolute;
+    transform: scale(0);
+    transition: 1s ease;
+}
+
+.active {
+    transform: scale(1);
+}
+
+.menu {
+    position: absolute;
+    z-index: 1;
+    transform: scale(0);
+    transition: 1s ease;
+}
+
+.menu ul li {
+    list-style: none;
+    text-align: center;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 10vmin;
+    font-family: 'Space Grotesk', sans-serif;
+    line-height: 20vmin;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.link:hover {
+    display: block;
+    color: #ff0000;
+    transform: scale(1.5) skew(-5deg, -5deg);
+    transition: 0.3s ease;
+}
+
+.display {
+    transform: scale(1);
+}
